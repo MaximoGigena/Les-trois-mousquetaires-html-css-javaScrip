@@ -40,10 +40,10 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  input:focus, textarea:focus {
-    border-color: #4caf50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-    outline: none;
+  input:focus {
+    border: 2px solid #4caf50;
+    outline: none; 
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
 }
 
   form {
@@ -66,10 +66,25 @@
 }
 
 .body{
-    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Slab', serif;
     height: 100vh; 
+    background: linear-gradient(to bottom, #9900ff 50%, #fbff00 100%) !important;
+}
+.footer{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 2.6);
 }
